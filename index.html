@@ -7,7 +7,7 @@
 $(document).ready(function(){
   $("button").click(function(){
     $.getJSON("js/data.json",function(result){
-      $.each(result.sites[0], function(i, field){
+      $.each(result, function(i, field){
         $("p").append(field + " ");
       });
     });
