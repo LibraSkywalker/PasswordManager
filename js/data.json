@@ -1,5 +1,5 @@
-{"sites":[
-	{"name":"Zhihu","time":1}
-	{"name":"QQ","time":1}
-	{"name":"JingDong","time":1}
-]}
+{ 
+  "firstName": "Bill",
+  "lastName": "Gates",
+  "age": 60
+}
