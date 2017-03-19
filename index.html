@@ -6,7 +6,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("https://libraskywalker.github.io/PasswordManager/js/data.json",function(result){
+    $.getJSON("js/data.json",function(result){
       $.each(result.sites[0], function(i, field){
         $("p").append(field + " ");
       });
