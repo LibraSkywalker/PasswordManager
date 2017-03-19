@@ -1,3 +1,3 @@
-$.getJSON('js/data.json', function(data){
-    $('p').append(data.sites[0].name);
+$.getJSON("js/data.json", function(json){
+  alert("JSON Data: " + json.sites[1].name);
 });
