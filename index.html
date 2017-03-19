@@ -1,12 +1,25 @@
+<!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="js/calculate.js"></script>
+<script src="js/jquery-3.2.0.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("https://libraskywalker.github.io/PasswordManager/js/data.json",function(result){
+      $.each(result.sites[0], function(i, field){
+        $("p").append(field + " ");
+      });
+    });
+  });
+});
+</script>
 </head>
 
 <body>
+
 <button>获得 JSON 数据</button>
 <p></p>
-</body>
 
-</html> 
+</body>
+</html>
